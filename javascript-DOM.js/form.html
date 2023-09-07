@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Form</h2>
+    <p>Please input a number less than 10:</p>
+    <input id="numb" />
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <script>
+      function myFunction() {
+        // Get the value of the input field with id="numb"
+        let x = document.getElementById("numb").value;
+        console.log(x);
+        // If x is greater than 10
+        let text;
+        if (x > 10) {
+          text = "Input not valid";
+        } else {
+          text = "Input OK";
+        }
+
+        alert(text);
+      }
+    </script>
+  </body>
+</html>

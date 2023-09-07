@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Element</title>
+  </head>
+  <body>
+    <h1>Select Nested Element</h1>
+    <p>Ini text di luar div</p>
+    <div>
+      <p class="first">Ini text di dalam div</p>
+      <p>Ini text ke-2 dalam div</p>
+    </div>
+
+    <script>
+      let element = document.querySelector("div ");
+      console.log(element);
+      document.querySelector("div .first").style.color = "red";
+    </script>
+  </body>
+</html>

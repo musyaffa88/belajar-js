@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript addEventListener()</h2>
+    <p>This example uses the addEventListener() method</p>
+    <button id="myBtn">Try it</button>
+
+    <script>
+      // document.getElementById("myBtn").addEventListener("click", myFunction);
+      let btn = document.getElementById("myBtn");
+      btn.addEventListener("click", onClickFunc);
+      btn.addEventListener("mouseover", onHoverFunc);
+
+      function onClickFunc() {
+        alert("Hello World!");
+      }
+
+      function onHoverFunc() {
+        document.getElementById("myBtn").style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>

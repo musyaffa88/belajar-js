@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      
+      <img
+        id="image"
+        src="js.png"
+        width="115"
+        height="98"
+      />
+    <p>
+      Klik untuk mengganti gambar.
+    </p>
+
+    <button id="btn1">Selenium</button>
+    <button id="btn2">HTML</button>
+    <button id="btn3">Appium</button>
+
+    <script>
+    document.getElementById('btn1').onclick = function ubahGambar()
+	{
+		document.getElementById("image").src="selenium.png";
+	}
+	document.getElementById('btn2').onclick = function ubahGambar()
+	{
+		document.getElementById("image").src="html.png";
+	}
+    document.getElementById('btn3').onclick = function ubahGambar()
+	{
+		document.getElementById("image").src="appium.png";
+	}
+    </script>
+  </body>
+</html>
