@@ -1,10 +1,10 @@
 // then and catch
-// axios
-//   .get("https://dummyjson.com/products")
-//   .then((response) => {
-//     console.log("products:", response.data.products);
-//   })
-//   .catch((error) => console.log(error));
+axios
+  .get("https://dummyjson.com/products")
+  .then((response) => {
+    console.log("products:", response.data.products);
+  })
+  .catch((error) => console.log(error));
 
 // axios
 //   .get("https://dummyjson.com/uses")

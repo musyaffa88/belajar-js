@@ -1,15 +1,15 @@
-// import  axios  from "axios";
-const axios = require('axios');
-
-const searchProduct = async (keyword) => {
-  try {
-    const response = await axios.get(`https://dummyjson.com/products/search?q=${keyword}`);
-    // const response = await axios.get(`https://dummyjson.com/products/search?q=${keyword}&select=title,description,price,brand,category`);
-    console.log(response.data);
-    // console.log("products :", response.data.products);
-  } catch (error) {
-    console.log(error);
-  }
+document.getElementById('searchButton').onclick = function cari(){
+    let kataKunci = document.getElementById('searchInput').value
+    fetch(`https://dummyjson.com/products/search?q=${kataKunci}`)
+    .then(res => res.json())
+    .then(data =>{
+      if (data.products.length == 0) {
+        console.log("Data Tidak Ditemukan");
+      }else{
+        console.log(data);
+      }
+    })
+    .catch(error => {
+      console.log(error);
+    });
 };
-
-searchProduct("phone");
