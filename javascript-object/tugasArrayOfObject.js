@@ -18,6 +18,8 @@ const menus = [
 ];
 
 let menu = menus.filter(menu => menu.harga > 10000);
+console.log(menu.nama);
+
 let namaMenu = [];
 for (let index = 0; index < menu.length; index++) {
     namaMenu[index] = menu[index].nama;
